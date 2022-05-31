@@ -1,0 +1,18 @@
+1. Abrir carpeta de Proyecto_web
+
+2. Abrir terminal
+
+3. Activar ambiente virtual
+python3 -m venv .venv
+source .venv/bin/activate
+
+    
+
+4. Entrar a la carpeta de proyecto_final
+    cd proyecto_final
+
+5. python manage.py runserver
+
+#si django esta activado no puedo usar mas la terminal
+tenes que estar en la carpeta principal para activar la virtual
+control C desactivas django

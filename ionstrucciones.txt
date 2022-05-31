@@ -1,0 +1,4 @@
+python3 -m venv .venv
+source .venv/bin/activate
+cd proyecto_final
+python manage.py runserver
