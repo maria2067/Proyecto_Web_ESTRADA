@@ -27,14 +27,22 @@ def pagina_principal(request):
     # return render(request , 'base.html') # forma de importar archivo html
     return render(request , 'index.html') # forma de importar archivo html
 
+def pagina_about(request):
+    # return render(request , 'base.html') # forma de importar archivo html
+    return render(request , 'about.html') # forma de importar archivo html
+
+
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', pagina_principal, name="pagina principal"),
-    path('accounts/' , include('accounts.urls'), name="accounts"),
+    path('about/' ,pagina_about,name="about"),
+
+
+    path('accounts/' , include('accounts.urls')),
     path('mensajes/' , include('mensajes.urls')),
     path('pages/' , include('pages.urls')),
+    
 ]
-

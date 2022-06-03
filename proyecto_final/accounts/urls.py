@@ -5,6 +5,16 @@ from django.conf.urls import include
 from . import views
 
 
+
 urlpatterns = [
     path('', views.pagina_principal_accounts),
+    path('login/', views.account_login,name="login"),
+    path('register/', views.account_register,name="register"),
+    path('profile/', views.account_profile,name="profile"),
 ]
+
+
+
+# accounts/login
+# accounts/register
+# accounts/profile
